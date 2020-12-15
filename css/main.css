@@ -1,0 +1,61 @@
+:root {
+  --fhpc-one: 50pt;
+  --fhpc-two: 100pt;
+  --fhpc-three: 150pt;
+  --fvpc-one: 50pt;
+	--fvpc-two: 100pt;
+}
+
+a {
+	cursor: pointer;
+}
+
+img {
+  width: 250pt;
+  height: 200pt;
+
+	display: fixed;
+	position: absolute;
+}
+
+img:hover {
+	width: 500pt;
+	height: 400pt;
+}
+
+/* upper */
+#img-1 {
+	z-index: 1;
+	left: var(--fhpc-one);
+	top: var(--fvpc-one);
+
+	opacity: 0.2;
+}
+#img-2 {
+	z-index: 2;
+	left: var(--fhpc-two);
+	top: var(--fvpc-one);
+
+	opacity: 0.6;
+}
+/* lower */
+#img-3 {
+	z-index: 3;
+	left: var(--fhpc-one);
+	top: var(--fvpc-two);
+	opacity: 0.6;
+}
+#img-4 {
+	z-index: 4;
+	left: var(--fhpc-three);
+	top: var(--fvpc-two);
+
+	opacity: 0.4;
+}
+
+
+#img-5 {
+	z-index: 5;
+	left: var(--fhpc-two);
+	top: var(--fvpc-two);
+}
