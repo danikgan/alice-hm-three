@@ -59,3 +59,49 @@ img:hover {
 	left: var(--fhpc-two);
 	top: var(--fvpc-two);
 }
+
+
+
+
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  /* background-color: white; */
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+	position: absolute;
+	display: flex;
+	width: 500px;
+	text-align: left;
+	z-index: 0;
+	
+	left: var(--fhpc-one);
+	top: var(--fvpc-one);
+
+  /* width: 200px;
+  bottom: 0;
+  left: 50%;  */
+  /* margin-left: -100px; */
+}
+
+.tooltiptext {
+  font-size: 50px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
